@@ -45,6 +45,8 @@ function selectionSort(nums) {
             }
         }
         console.log("Nums BEFORE:", nums);
+        // it's [nums.length - 1 - i] because nums.length is always 1 loner than max array index,
+        // so [nums.length - 1] represents the last index, and [- i]  represents reducing the max index by the outer for loop.
         [nums[largestInd], nums[nums.length-i-1]] = [nums[nums.length-i-1], nums[largestInd]];
         // temp = nums[largestInd];
         // nums[largestInd] = nums[nums.length-i-1]
