@@ -44,12 +44,12 @@ function selectionSort(nums) {
                 largestInd = pizza;
             }
         }
-        console.log("Nums BEFORE:", nums)
-        // [nums[largestInd], nums[nums.length-i-1]] = [nums[nums.length-i-1], nums[largestInd]]
-        temp = nums[largestInd];
-        nums[largestInd] = nums[nums.length-i-1]
-        nums[nums.length-i-1] = temp
-        console.log("NUMS AFTER:", nums)
+        console.log("Nums BEFORE:", nums);
+        [nums[largestInd], nums[nums.length-i-1]] = [nums[nums.length-i-1], nums[largestInd]];
+        // temp = nums[largestInd];
+        // nums[largestInd] = nums[nums.length-i-1]
+        // nums[nums.length-i-1] = temp
+        console.log("NUMS AFTER:", nums);
     }
     return nums
 }
